@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<title>MyFirstProject</title>
+</head>
+<body>
+<!--navbar-->
+<nav class="navbar navbar-expand-lg bg-danger navbar-dark py-3 fixed-top">
+    <div class="container">
+      <a href="#" class="navbar-brand">INSAT FOOD</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navmenu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Questions</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!--showcase-->
+<section class="bg-dark text-light  pb-0   text-center text-sm-start">
+    <div class="container">
+    <div class="d-flex align-items-start mt-5 justify-content-between"> 
+      <div class="my-5" >
+      <h1 class="text-danger">order  <span class="text-primary">your sandwitch </span> Now</h1>
+      <p class="lead my-4 text-white">we focus on providing students with a good quality of sandwitch and an awesome taste!!</p>
+  
+      <form  enctype="multipart/form-data" action="recap.php" method="post"  >
+        <label for="name">First name:</label><br>
+        <input name="name"  type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input name="last_name" type="text" id="lname" name="lname"><br> 
+        <br>
+        <label for="file">veuillez uploader votre CIN :</label> <br>
+        <input type="file" name="file" id="file"> <br><br>
+        <label for="sexe-select">sexe :</label><br> 
+        <select   class="my-3" name="sexe" id="sexe-select">
+          <option value="">--Please choose an option--</option>
+          <option value="homme">homme</option>
+          <option value="femme">femme</option>
+      </select>
+      <br>
+        <label for="Adresse">Adresse :</label><br>
+        <input name="Adresse" type="text" id="fname" name="fname"><br>
+        <label for="nbdesandwitch">nb de sandwitch</label><br>
+        <input name="nb_sandwitchs"  type="text" id="lname" name="lname"><br>
+      <label for="pet-select">Choose a type of sandwitch:</label>
+
+<select   class="my-3" name="sandwitchs" id="sandwitches-select">
+    <option value="">--Please choose an option--</option>
+    <option value="viande">viande</option>
+    <option value="poulet">poulet</option>
+    <option value="escalope">escalope</option>
+</select>
+<div    class="form-check">
+  <input name="add[]" class="form-check-input" type="checkbox" id="check1" name="option1" value="Harissa" checked>
+  <label class="form-check-label">Harissa</label>
+</div>
+<div class="form-check">
+    <input name="add[]"  class="form-check-input" type="checkbox" id="check1" name="option1" value="Salade" >
+    <label class="form-check-label">Salade</label>
+  </div>
+  <div  class="form-check my-3">
+    <input name="add[]" class="form-check-input" type="checkbox" id="check1" name="option1" value="Mayonnaise" >
+    <label class="form-check-label">Mayonnaise</label>
+  </div>
+  <input type="submit" class="btn btn-success" name="submit" value="commander"/>
+</form>
+    </div>
+      <img class="img-fluid w-50 d-none d-sm-block mt-5" src="./imgs/sandwitch1.jpg" alt="sandwitch_img"> 
+    </div>
+  </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  </body>
+  </html>
